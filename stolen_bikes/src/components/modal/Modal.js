@@ -39,6 +39,7 @@ let Modal = (props) => {
       })
 
     return () => { /* Unmount */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

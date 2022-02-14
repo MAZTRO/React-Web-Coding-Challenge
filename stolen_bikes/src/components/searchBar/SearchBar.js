@@ -11,6 +11,7 @@ let SearchBar = (props) => {
   const [city, setCity] = useState('')
 
   useEffect(() => {
+    console.log(bikes, loanding);
 
     setLoanding(true)
 
@@ -48,6 +49,7 @@ let SearchBar = (props) => {
       })
 
     return () => { /* Unmount */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   let handleSubmit = (evt) => {

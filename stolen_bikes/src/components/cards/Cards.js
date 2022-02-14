@@ -14,15 +14,12 @@ const formatCurrency = (locales, currency, fractionDigits, number) => {
 }
 
 let Cards = (props) => {
-  let actualDate = new Date()
-  let fullyear = actualDate.getFullYear()
-
-  const { bikes: [bikes, setBikes] } = { bikes: useState([]), ...(props.state || {}) }
-  const { loanding: [loanding, setLoanding] } = { loanding: useState(false), ...(props.state || {}) }
+  const { bikes: [bikes] } = { bikes: useState([]), ...(props.state || {}) }
+  const { loanding: [loanding] } = { loanding: useState(false), ...(props.state || {}) }
   const [localLoanding, setLocalLoanding] = useState(false)
   const [totalStolen, setTotalStolen] = useState(0)
-  const [fromDate, setFromDate] = useState('')
-  const [toDate, setToDate] = useState('')
+  /* const [fromDate, setFromDate] = useState('')
+  const [toDate, setToDate] = useState('') */
   const [modal, setModal] = useState(false)
   const [selectedID, setSelectedID] = useState('')
 
@@ -65,6 +62,7 @@ let Cards = (props) => {
 
 
     return () => { /* Unmount */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   let handlePopUp = (id) => {
@@ -92,7 +90,7 @@ let Cards = (props) => {
           }
         </div>
 
-        <div className="filters">
+        {/* <div className="filters">
           <p>From:</p>
           <input
             value={fromDate}
@@ -109,7 +107,7 @@ let Cards = (props) => {
             className='toDate'
             max={`${fullyear}-12-31`}
           />
-        </div>
+        </div> */}
         <p>App by Jonatan Mazo</p>
       </div>
 

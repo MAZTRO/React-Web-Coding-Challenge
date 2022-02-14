@@ -7,6 +7,7 @@ let P404 = (props) => {
   return (
     <div className="p404Container">
       <h1>Page 404</h1>
+      <button className="back" onClick={e => {navigate('/')}}>Volver al inicio</button>
     </div>
   )
 }
