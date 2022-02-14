@@ -1,0 +1,106 @@
+.modalContainer {
+  width: 80vw;
+
+  margin: auto;
+
+  background-color: #FFF;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.modalContainer .cardDetail {
+  width: 100%;
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.modalContainer .cardDetail .title {
+  width: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.modalContainer .cardDetail .title .largeImage {
+  width: 30vw;
+  height: 20vw;
+  min-width: 30vw;
+
+  margin: 20px 10px 0px 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.modalContainer .cardDetail .title .infoContModal {
+  margin: 20px 20px 10px 20px;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.modalContainer .cardDetail .title .infoContModal h2 {
+  width: 100%;
+
+  margin: 10px auto;
+
+  color: var(--color-primary);
+}
+
+.modalContainer .cardDetail .title .infoContModal h3 {
+  width: 100%;
+
+  margin: 0px auto;
+
+  color: #222;
+}
+
+.modalContainer .cardDetail .title .infoContModal h4 {
+  width: 100%;
+
+  margin: 20px auto 0px auto;
+
+  color: var(--color-primary);
+}
+
+.modalContainer .cardDetail .title .infoContModal p {
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* =========================================== */
+
+.modalContainer .cardDetail .generalInfo {
+  width: 95%;
+
+  margin: 10px auto;
+  padding: 20px 0px;
+
+  display: flex;
+  flex-flow: column;
+
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+.modalContainer .cardDetail .generalInfo h2 {
+  width: 95%;
+  margin: 0px auto 0px auto;
+
+  color: #FFF;
+}
+
+.modalContainer .cardDetail .generalInfo p {
+  width: 95%;
+  margin: 0px auto 20px auto;
+
+  color: #FFF;
+}

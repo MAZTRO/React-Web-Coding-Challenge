@@ -1,0 +1,218 @@
+.cardsContainer {
+  width: 100%;
+
+  margin: auto;
+
+  display: flex;
+}
+
+.cardsContainer .infoContainer {
+  width: 15%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.cardsContainer .infoContainer .floatCard {
+  width: 90%;
+
+  margin: 5% auto;
+  padding: 10% 5%;
+
+  display: flex;
+  flex-flow: column;
+
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #CCC;
+}
+
+.cardsContainer .infoContainer .floatCard h2 {
+  width: 100%;
+
+  margin: auto;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.cardsContainer .infoContainer .floatCard h3 {
+  width: 100%;
+
+  margin: 10px auto;
+
+  border-bottom: 1px solid rgb(230, 5, 23);
+
+  color: #FFF;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.cardsContainer .infoContainer p {
+  width: 100%;
+
+  margin: 10px auto;
+
+  color: #AAA;
+  text-align: center;
+
+  transition: .3s;
+}
+
+.cardsContainer .infoContainer p:hover {
+  color: var(--color-primary);
+  cursor: default;
+}
+
+/* ============================================================ */
+
+.cardsContainer .cardsCont {
+  width: 80%;
+  height: 80vh;
+
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #CCC;
+
+  overflow-y: auto;
+}
+
+.cardsContainer .cardsCont .cardItem {
+  width: 30vw;
+  min-width: 300px;
+
+  margin: 15px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cardsContainer .cardsCont .cardItem .thumb {
+  width: 20vw;
+  height: 20vw;
+  min-height: 20vw;
+
+  margin: 0px auto 0 auto;
+
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+
+  border-radius: 10px;
+
+  z-index: 2;
+}
+
+.cardsContainer .cardsCont .cardItem .infoCont {
+  width: 100%;
+
+  margin: -2vw auto auto auto;
+  padding: 3vw 0 0 0;
+
+  display: flex;
+  flex-flow: column;
+
+  background-color: var(--color-primary);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.cardsContainer .cardsCont .cardItem h2 {
+  width: 90%;
+
+  margin: 5px auto;
+
+  font-size: 1.5vw;
+  color: #FFF;
+  text-align: center;
+}
+
+.cardsContainer .cardsCont .cardItem h3 {
+  width: 90%;
+
+  margin: 5px auto;
+
+  font-size: 1vw;
+  color: #FFF;
+  text-align: center;
+}
+
+.cardsContainer .cardsCont .cardItem .dateStolen {
+  width: 90%;
+
+  margin: 5px auto;
+
+  font-size: 1vw;
+  color: #FFF;
+  text-align: center;
+}
+
+.cardsContainer .cardsCont .cardItem .more {
+  margin: 10px auto;
+  padding: 10px 20px;
+
+  background-color: #FFF;
+  border: none;
+  outline: none;
+  border-radius: 200px;
+
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+/* ===================================================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #2229;
+
+  display: flex;
+
+  z-index: 1000;
+}
+
+.modal .close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FFF;
+  border-radius: 200px;
+
+  color: var(--color-primary);
+  font-weight: 800;
+
+  cursor: pointer;
+}

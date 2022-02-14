@@ -1,0 +1,94 @@
+.searchBarContainer {
+  width: 90%;
+  margin: 20px auto 10px 3%;
+
+  display: flex;
+
+  border-radius: 200px;
+
+  box-shadow: 3px 3px 10px #CCC;
+}
+
+.searchBarContainer p {
+  width: max-content;
+  margin: auto 5px;
+}
+
+.searchBarContainer input {
+  width: 30%;
+  margin: auto auto auto 0;
+  padding: 10px 20px;
+
+  border-radius: 200px;
+  border: none;
+  outline: none;
+}
+
+.searchBarContainer .descriptionInput {
+  width: 50%;
+}
+
+.searchBarContainer .cityInput {
+  width: 10%;
+}
+
+.searchBarContainer input[type=number] {
+  width: 5%;
+}
+
+.searchBarContainer input:focus {
+  box-shadow: 3px 3px 10px #CCC;
+}
+
+.searchBarContainer input[type=date] {
+  width: max-content;
+
+  margin: auto 10px;
+  padding: 5px 1vw;
+
+  border-radius: 200px;
+  outline: none;
+  border: none;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.searchBarContainer input[type=date]:focus {
+  box-shadow: 3px 3px 10px #CCC;
+}
+
+.searchBarContainer input[type=date]::-webkit-datetime-edit-month-field {
+  color: var(--color-dark);
+}
+.searchBarContainer input[type=date]::-webkit-datetime-edit-day-field {
+  color: var(--color-dark);
+}
+.searchBarContainer input[type=date]::-webkit-datetime-edit-year-field {
+  color: var(--color-primary);
+}
+
+.searchBarContainer input[type="date"]::-webkit-inner-spin-button,
+.searchBarContainer input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.searchBarContainer button {
+  margin: auto 0 auto auto;
+  padding: 10px 20px;
+
+  border-radius: 200px;
+  border: none;
+  outline: none;
+
+  background-color: var(--color-primary);
+
+  box-shadow: -5px 0px 10px #CCC;
+
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.indexContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.indexContainer header {
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+
+  display: flex;
+  flex-flow: column;
+
+  background-color: #FFF;
+
+  box-shadow: 3px 3px 10px #DDD;
+}
+
+.indexContainer header .titlesCont {
+  width: 100%;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.indexContainer header .titlesCont .logo {
+  width: 10vw;
+  height: calc(10vw / 2.2344);
+
+  margin: auto 5% 0 2%;
+
+  background-image: url('https://growth.chiper.co/wp-content/uploads/2021/03/cropped-LOGO-CHIPER-1.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.indexContainer header .titlesCont .titles {
+  margin: auto auto auto 0%;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.indexContainer header .titlesCont .titles h1 {
+  width: 100%;
+
+  margin: 2% auto auto auto;
+
+  color: var(--color-dark);
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+.indexContainer header .titlesCont .titles h2 {
+  width: 100%;
+
+  margin: auto;
+
+  color: var(--color-gray);
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+}
+
+/* ====================================== */
+/* ============== Body ================== */
+/* ====================================== */
+
+.indexContainer .container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  margin: auto;
+}
